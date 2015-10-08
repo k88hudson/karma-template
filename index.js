@@ -16,6 +16,8 @@ const DEPENDENCIES = [
   'karma-mocha-reporter',
   'karma-sourcemap-loader',
   'karma-webpack'
+  'mocha',
+  'webpack'
 ];
 
 const argv = require('minimist')(process.argv.slice(2));
