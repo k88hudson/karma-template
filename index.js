@@ -46,5 +46,14 @@ function copyFiles() {
   log('Success! Files copied.');
 }
 
+function travis() {
+  log(`You may need to add this to travis:
+
+before_install:
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start\n`);
+}
+
 if (argv.install !== false) installDependencies();
 copyFiles();
+travis();
