@@ -1,0 +1,22 @@
+{
+  "name": "karma-template",
+  "version": "0.0.0",
+  "description": "My personal karma setup",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "pretest": "node ./index.js --no-save",
+    "test": "karma start",
+    "posttest": "rimraf karma.conf.js && rimraf ./tests"
+  },
+  "author": "k88hudson",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "rimraf": "^2.4.3"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "fs-extra": "^0.24.0",
+    "minimist": "^1.2.0"
+  }
+}
