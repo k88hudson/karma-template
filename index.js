@@ -16,7 +16,7 @@ const DEPENDENCIES = [
   'karma-mocha',
   'karma-mocha-reporter',
   'karma-sourcemap-loader',
-  'karma-webpack'
+  'karma-webpack',
   'mocha',
   'webpack'
 ];
