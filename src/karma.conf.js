@@ -8,15 +8,22 @@ module.exports = function (config) {
       'tests/**/*.js'
     ],
     preprocessors: {
-     'tests/**/*.js': ['babel', 'webpack', 'sourcemap']
+     'tests/**/*.js': ['webpack', 'sourcemap']
     },
     webpack: {
       devtool: 'inline-source-map',
-      loaders: [{
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel'
-      }]
+      module: {
+        loaders: [{
+          test: /\.jsx?$/,
+          exclude: /(node_modules|bower_components)/,
+          loader: 'babel'
+        }]
+      }
+    },
+    webpackMiddleware: {
+      noInfo: true
     }
   });
 };
+
+

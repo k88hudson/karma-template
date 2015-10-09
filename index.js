@@ -10,7 +10,6 @@ const SRC_DIR = path.join(__dirname, 'src');
 const DEPENDENCIES = [
   'babel-loader',
   'karma',
-  'karma-babel-preprocessor',
   'karma-chrome-launcher',
   'karma-firefox-launcher',
   'karma-mocha',
