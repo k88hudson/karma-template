@@ -8,6 +8,7 @@ const colors = require('colors');
 const LOG_PREFIX = '** karma-template:';
 const SRC_DIR = path.join(__dirname, 'src');
 const DEPENDENCIES = [
+  'babel-loader',
   'karma',
   'karma-babel-preprocessor',
   'karma-chrome-launcher',

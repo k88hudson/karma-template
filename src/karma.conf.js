@@ -11,7 +11,12 @@ module.exports = function (config) {
      'tests/**/*.js': ['babel', 'webpack', 'sourcemap']
     },
     webpack: {
-      devtool: 'inline-source-map'
+      devtool: 'inline-source-map',
+      loaders: [{
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel'
+      }]
     }
   });
 };
